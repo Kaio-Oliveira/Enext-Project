@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans|Oswald:300,400');
+
+* {
+  box-sizing: border-box;
+}
+
+/************** MOBILE HEADER **************/
+.subheader-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+/************** HAMBURGER MENU **************/
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;    
+    width: auto;    
+}
+
+.brand {
+  font-size: 1.5em;
+}
+
+.brand__title {
+  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  text-transform: uppercase;
+  color: #d83b1e;  
+}
+
+.brand__title--light {
+  font-weight: 200;
+}
+
+.brand__ad {
+  position: relative;  
+  font-family: 'Droid Serif', Times New Roman, serif;
+  font-size: .5em;
+  font-style: italic;
+  text-align: center;
+  color:#523468;  
+  z-index: 1;  
+  font-weight: bold;    
+}
+
+.brand__ad:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);  
+  width: 100%;
+  display: flex;  
+  height: .1em;
+  background-color: #b9b9b9;  
+  z-index: -1;
+}
+
+.brand__adContent {
+  padding:0 .5em 0 .5em; 
+  background-color: white;
+
+}
+
+/** CART **/
+
+#cart {
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #b9b9b9;
+  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  padding-top: .1em;  
+}
+
+#cart p  {  
+  margin: 0;    
+}
+
+#cartCount {
+  color: #d83b1e;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
