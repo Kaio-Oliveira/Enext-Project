@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>	
@@ -10,10 +9,12 @@
 </head>
 <body>
 	<header>
-		<div class="subheader-container">
-			<div class="hamburger">					
-				
-			</div>
+		<div class="subheader-container">			
+			<a href="#" class="hamburger">
+	        	<div class="line"></div>
+	        	<div class="line"></div>
+	        	<div class="line"></div>
+	      	</a>
 			<div class="logo">
 				<div class="brand">
 		  			<div class="brand__title">
@@ -23,20 +24,67 @@
 		    			<span class="brand__adContent">fine potions since 1026</span>
 		  			</div><!-- brand__ad -->  			
 				</div><!-- brand -->	
-			</div>				
+			</div><!-- logo -->
+			<form>
+				<input type="submit" name="submit">
+				<input type="search" name="submit" placeholder="search our stock">				
+			</form>			
 			<div id="cart">
 				<a href="#"><img src="img/icons/cauldron.jpg"></a>			
 				<p>bag:<span id="cartCount">1</span></p>
 			</div>
-		</div><!-- subheader-container -->		
+		</div><!-- subheader-container -->
 		<div id="shipping">
-			<p>Free shipping</p>
-			<p>on orders over $50</p>
+			<p>Free shipping order over $50</p>				
 		</div>
 	</header>
 
 	<main>
-		
+		<h2>Potions</h2>		
+		<div id="galleryWrapper">
+			<div class="box" id="potion01">
+			    <figure class="boxContent">
+			      <img src="img/products/aging-potion.png" alt="aging-potion">
+			      <figcaption class="titleBox">Aging Potion - <span class="price">$29.99</span></figcaption>
+			    </figure>
+			 </div>
+
+			 <div class="box" id="potion02">
+			    <figure class="boxContent">
+			      <img src="img/products/bulgeye-potion.png" alt="bulgeye-potion">
+			      <figcaption class="titleBox">Bulgeye Potion - <span class="price">$19.99</span></figcaption>
+			    </figure>
+			 </div>
+
+			 <div class="box" id="potion03">
+			    <figure class="boxContent">
+			      <img src="img/products/dragon-tonic.png" alt="dragon-tonic">
+			      <figcaption class="titleBox">Dragon Tonic - <span class="price">$64.99</span></figcaption>
+			    </figure>
+			 </div>
+
+			 <div class="box" id="potion04">
+			    <figure class="boxContent">
+			      <img src="img/products/love-potion.png" alt="love-potion">
+			      <figcaption class="titleBox">Love Potion - <span class="price">$29.99</span></figcaption>
+			    </figure>
+			 </div>
+
+			 <div class="box" id="potion05">
+			    <figure class="boxContent">
+			      <img src="img/products/polyjuice-potion.png" alt="polyjuice-potion">
+			      <figcaption class="titleBox">Polyjuice Potion - <span class="price">$99.99</span></figcaption>
+			    </figure>
+			 </div>
+
+			 <div class="box" id="potion06">
+			    <figure class="boxContent">
+			      <img src="img/products/sleeping-draught.png" alt="asleeping-draught">
+			      <figcaption class="titleBox">Sleeping Draught - <span class="price">$14.99</span></figcaption>
+			    </figure>
+			 </div>
+
+		</div><!-- galleryWrapper -->		
 	</main>
 	<footer>
 		
@@ -44,4 +92,5 @@
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
+
 
