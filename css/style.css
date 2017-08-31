@@ -1,18 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=Droid+Sans|Oswald:300,400');
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif');
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box;  
 }
 
+body {
+  margin: 0;
+  padding:0;
+}
+form {
+  display: none;
+}
 /************** MOBILE HEADER **************/
 .subheader-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  
+  justify-content: space-between;  
+  margin:1em 1em .25em 1em;
 }
 
 /************** HAMBURGER MENU **************/
+.hamburger {            
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  .line {
+    border-bottom: 5px solid #523468;  
+    width: 2.5em;
+    margin-bottom: .25em;
+    border-radius: 10px;
+  }
+  
+  .line:last-child {
+    margin-bottom: 0;
+  }
+
+/************** LOGO **************/
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,13 +70,13 @@
 
 .brand__ad {
   position: relative;  
-  font-family: 'Droid Serif', Times New Roman, serif;
+  font-family: 'Droid sans serif', Times New Roman, serif;
   font-size: .5em;
   font-style: italic;
   text-align: center;
   color:#523468;  
   z-index: 1;  
-  font-weight: bold;    
+  font-weight: 700;    
 }
 
 .brand__ad:before {
@@ -68,10 +95,9 @@
 .brand__adContent {
   padding:0 .5em 0 .5em; 
   background-color: white;
-
 }
 
-/** CART **/
+/************** CART **************/
 
 #cart {
   display: flex;
@@ -80,25 +106,82 @@
   align-items: center;
   text-transform: uppercase;
   color: #b9b9b9;
-  font-family: 'Oswald', Helvetica, Arial, sans-serif;
-  font-size: 1em;
+  font-family: 'Droid', Helvetica, Arial, sans-serif;
+  font-size: .75em;
   padding-top: .1em;  
+  font-weight: bold;
 }
 
 #cart p  {  
   margin: 0;    
+
 }
 
 #cartCount {
   color: #d83b1e;
+  font-family: 'Droid serif', Times New Roman, serif;  
+}
+
+/************** SHIPPING **************/
+#shipping {  
+  font-style: italic;  
+  display: flex;
+  justify-content: center;
+  background-color: #E6E6E6;
+  width: 100%;  
+}
+
+#shipping p {
+  margin:0;
+  padding:0;
+  color: #736975;
+  font-family: 'Droid serif', Times New Roman, serif;   
+}
+
+/************** MAIN **************/
+
+main {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+}
+
+.box {  
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;           
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 100%;
+}
+
+figure img {  
+  height: 8em;    
+  width: 8em; 
 }
 
 
+figure figcaption {
+  font-size: .9em;
+  font-weight: bold;  
+}
+
+.price {
+  color: #d83b1e;  
+}
 
 
-
-
-
+#galleryWrapper {  
+  width: 100vw;
+  display: flex;  
+  flex-wrap: wrap;
+}
 
 
 
