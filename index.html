@@ -4,17 +4,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie-edge">	
-	<title>Enext Array</title>	
+	<title>Merlin's Potions</title>	
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
-<body>
-	<header>
+<body>		
+	<header>	
 		<div class="subheader-container">			
-			<a href="#" class="hamburger">
-	        	<div class="line"></div>
-	        	<div class="line"></div>
-	        	<div class="line"></div>
-	      	</a>
+			<div class="menu-toggle">
+    			<div class="hamburger"></div>
+  			</div>
+
 			<div class="logo">
 				<div class="brand">
 		  			<div class="brand__title">
@@ -25,21 +26,61 @@
 		  			</div><!-- brand__ad -->  			
 				</div><!-- brand -->	
 			</div><!-- logo -->
-			<form>
-				<input type="submit" name="submit">
-				<input type="search" name="submit" placeholder="search our stock">				
-			</form>			
+
+			<form id="searchForm" >			
+				<div class="searchcontainer">					
+					<button type="submit"><i class="fa fa-search"></i></button>
+					<input type="search" name="search" placeholder="Search our stock">
+				</div>								
+			</form>
+
+			<div id="shippingbig">
+				<p>Free shipping</p>
+				<p>order over $50</p>				
+			</div>					
+
 			<div id="cart">
 				<a href="#"><img src="img/icons/cauldron.jpg"></a>			
 				<p>bag:<span id="cartCount">1</span></p>
 			</div>
 		</div><!-- subheader-container -->
+		<nav class="site-nav">
+	      <ul>
+			<li><a href="#">Potions<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+			<li><a href="#">Ingredients<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+			<li><a href="#">Books<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+			<li><a href="#">Supplies<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+			<li><a href="#">Charms<i class="fa fa-caret-down" aria-hidden="true"></i></a></li>
+			<li><a href="#">Clearance!</a></li>
+			<li><a href="#">Sign In</a><span> or </span> <a href="#">Sign Up</a></li>
+			</ul>      		      
+	 	</nav>
+
 		<div id="shipping">
 			<p>Free shipping order over $50</p>				
-		</div>
+		</div>	
 	</header>
-
 	<main>
+		<div id="lightBoxBg">
+			<div id="lightbox">
+				<i class="fa fa-times" aria-hidden="true" id="closeIcon"></i>				
+	        	<figure class="lightboxContent">
+		      		<img id="lightboxImage" src="img/products/dragon-tonic.png" alt="dragon-tonic">
+		      		<figcaption class="lightboxDetails">
+		      			<h3 id="productName"></h3>
+		      			<h3>Use/Effect</h3>
+		      			<p id="effect"></p>
+		      			<h3>Ingredients:</h3>
+		      			<ul id="ingredient">
+			      			
+		      			</ul>
+		      			<h3>Price:</h3>
+		      			<span id="lightboxPrice"></span>
+		      			<button>add to Cart</button>
+		      		</figcaption>
+		    	</figure>		        	
+	    	</div>
+    	</div>
 		<h2>Potions</h2>		
 		<div id="galleryWrapper">
 			<div class="box" id="potion01">
@@ -85,10 +126,56 @@
 			 </div>
 
 		</div><!-- galleryWrapper -->		
-	</main>
+	</main>	
+
 	<footer>
-		
-	</footer>
+		<div class="form-container">
+			<form id="newsForm">
+				<h3>Sign up for our Newsletter</h3>
+				<p>Sign up for our newsletter &#38; get exclusive discounts!</p>
+				<div class="inputcontainer">
+					<input type="search" name="search" placeholder="Enter your mail">
+					<input type="submit" name="submit" value="submit">
+				</div>
+			</form>
+		</div>						
+		<div class="container-right">		
+			<nav id="footerMenu">
+				<ul>
+					<li><a href="#">Company</a></li>
+					<li><a href="#">Contact US</a></li>
+					<li><a href="#">Shipping</a></li>
+					<li><a href="#">Returns</a></li>
+					<li><a href="#">Careers</a></li>
+				</ul>
+			</nav>		
+		<div id="social">
+			<span class="fa-stack">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-facebook-f fa-stack-1x"></i>
+			</span>
+			<span class="fa-stack">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-twitter fa-stack-1x"></i>
+			</span>
+			<span class="fa-stack">
+				<i class="fa fa-pinterest fa-stack-2x"></i>
+			</span>
+			<span class="fa-stack">
+				<i class="fa fa-circle fa-stack-2x"></i>
+				<i class="fa fa-tumblr fa-stack-1x"></i>
+			</span>
+			<span class="fa-stack">
+				<i class="fa fa-google-plus-official fa-stack-2x"></i>
+			</span>			
+		</div>
+
+		<div id="copyright">
+	        <p class="copyright">© 2017 Merlin's Potions. All Rights Reserved</p>
+		</div>	
+	</div>
+	</footer>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
